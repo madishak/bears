@@ -265,14 +265,14 @@ body {
     padding: 74px 0 75px 0;
 }
 
-.good-features-headline {
+.top-container {
     position: relative;
     display: flex;
     align-items: center;
     margin-top: 71px;
 }
 
-.good-features-headline-desc {
+.good-features__desc {
     width: 117px;
     margin-right: 59px;
     font-size: 17px;
@@ -497,6 +497,79 @@ body {
 .reviews__button-mobile {
     display: none;
 }
+.contacts {
+    padding-top: 75px;
+}
+.contacts__icon {
+    background: transparent url("icons/flag.png") center center no-repeat;
+    width: 174px;
+    height: 81px;
+}
+
+.contacts__inner {
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 39px;
+}
+.contacts__paragraph {
+    display: flex;
+    padding-bottom: 39px;
+
+}
+.contacts__paragraph:last-child {
+    padding-bottom: 0;
+}
+.contacts__desc {
+    padding-right: 25px;
+}
+.contacts__link {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #62d1ba;
+    line-height: 30px;
+}
+
+.contacts__item-link:hover {
+    color: #46c1ae;
+}
+.contacts__item-link:active {
+    color: #46c1ae;
+    opacity: 0.3;
+}
+.contacts__caption {
+    width: 210px;
+    margin-right: 26px;
+
+}
+
+.contacts__image-holder {
+    display: flex;
+    justify-content: center;
+    width: 528px;
+    height: 458px;
+    margin-left: auto;
+    overflow: hidden;
+    margin-top: -149px;
+}
+.contacts__image {
+    width: 768px;
+    height: 457px;
+
+}
+.contacts__image-holder-tablet {
+    display: none;
+}
+.contacts__button {
+    display: block;
+    width: 226px;
+    margin-top: -52px;
+}
+.contacts__button-tablet {
+    display: none;
+}
 /*=============================================== MEDIA QUERIES==========================================================*/
 
 @media (min-width: 768px) and (max-width : 992px) {
@@ -529,16 +602,17 @@ body {
         max-width: 668px;
 
     }
+
     .good-features {
         padding: 56px 0 52px 0;
     }
-    .good-features-headline {
+    .top-container {
         width: 100%;
         justify-content: space-between;
         margin-top: 0;
     }
 
-    .good-features-headline-desc {
+    .good-features__desc {
         order: 2;
         margin-right: 0;
     }
@@ -570,6 +644,46 @@ body {
     .reviews {
         width: 100%;
     }
+    .contacts {
+        padding-bottom: 56px;
+    }
+
+    .contacts__icon {
+        width: 47px;
+        order: 2;
+    }
+    .contacts__inner {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    .contacts__link {
+       height: 30px;
+    }
+
+    .contacts__image-holder {
+       display: none;
+    }
+    .contacts__image-holder-tablet {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        padding-bottom: 52px;
+    }
+    .contacts__image {
+        width: 100%;
+        height: auto;
+    }
+    .contacts__button {
+        display: none;
+    }
+    .contacts__button-tablet {
+        margin: 0 auto;
+        display: block;
+    }
+
 }
 
 
@@ -637,7 +751,7 @@ body {
     .good-features {
         padding: 33px 0 35px 0;
     }
-    .good-features-headline {
+    .top-container {
         width: 100%;
         flex-direction: column;
         justify-content: flex-start;
@@ -645,7 +759,7 @@ body {
         margin: 0 0 30px 0;
     }
 
-    .good-features-headline-desc {
+    .good-features__desc {
         order: 2;
         margin-right: 0;
         width: auto;
@@ -752,6 +866,26 @@ body {
         align-self: stretch;
         border:  1px solid #ececec;
         width: inherit;
+    }
+    .contacts {
+        padding-top: 39px;
+    }
+
+    .contacts__icon {
+        display: none;
+    }
+    .contacts__inner {
+        padding: 0 30px 40px 30px;
+    }
+    .contacts__image-holder {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .contacts__button {
+        margin-top: 39px;
+        align-self: center;
+        width: calc(100% - 60px);
+
     }
 
 
