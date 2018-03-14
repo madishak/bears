@@ -679,6 +679,10 @@ body {
     margin: 0 31px 0 0;
 }
 
+.page__title {
+    padding: 20px 0 77px 0;
+}
+
 /*=============================================== MEDIA QUERIES==========================================================*/
 
 @media (min-width: 768px) and (max-width : 1050px) {
@@ -705,6 +709,10 @@ body {
         background:  #f9f9f9  url("images/hero__bg-tablet.png")  center top no-repeat;
         width: 100%;
         height: 746px;
+    }
+    .header__title {
+        font-size: 43px;
+        line-height: 50px;
     }
     .header__division-group {
         width: 100%;
