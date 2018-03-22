@@ -1301,8 +1301,20 @@ body {
         padding-bottom: 48px;
     }
     .form__desc {
+        position: relative;
         text-align: left;
         padding: 0 0 25px 0 ;
+        width: 100%;
+        overflow: hidden;
+    }
+    .form__desc:after {
+        position: absolute;
+        content: " ";
+        height: 1px;
+        width: inherit;
+        background: #62d1ba;
+        margin-top: 7px;
+        margin-left: 19px;
     }
 
 
@@ -1338,10 +1350,7 @@ body {
     .form__input {
         padding: 16px 0;
     }
-    .form__input[type="tel"] {
-        margin-bottom: 19px;
-    }
-    .form__input[type="email"] {
+    .form__input[type="tel"], .form__input[type="email"] {
         margin-bottom: 35px;
     }
 
